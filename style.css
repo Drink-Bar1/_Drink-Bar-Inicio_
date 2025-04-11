@@ -1349,6 +1349,8 @@ header, main, footer {
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        border: 2px solid var(--primary-color);
+        border-radius: 33px;
     }
 
     .menu-1 a {
