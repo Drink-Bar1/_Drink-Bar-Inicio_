@@ -1497,6 +1497,10 @@ header, main, footer {
         position: relative;
         z-index: 20;
     }
+    .social{
+        width: 40px;
+        height: 40px;
+    }
 
     .info-redes .footer-logo-container {
         display: none;
