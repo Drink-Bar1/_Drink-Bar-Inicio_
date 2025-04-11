@@ -1,0 +1,1518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root{
+    --primary-color: rgb(215, 15, 165);
+    --background-color: black;
+    --white: #fff;
+    --gris: #0d0d0d;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal:500;
+    --font-weight-medium:600;
+    --font-weight-semiblod:700;
+    --font-weight-bold:800;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "Poppins", sans-serif;
+    max-width: var(--site-max-width);
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    user-select: none;
+    overflow-x: hidden;
+    box-shadow: 0 0 20px var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer {
+    background-color: var(--background-color);
+}
+
+/*-----------------------HEADER SECCIÓN-----------------------*/
+
+.navbar-container {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkbox-container {
+    display: none;
+}
+
+.checkbox-container label {
+    display: none;
+}
+
+.checkbox-container:has(input[type="checkbox"]:checked) ~ .menu-1 {
+    display: block;
+}
+
+.menu-1 {
+    width: 15%;
+    text-align: center;
+}
+
+.menu-1 ul {
+    background-color: transparent;
+}
+
+.menu-1 a {
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo-2 {
+    width: 90px;
+    border-radius: 50%;
+    margin: 15px auto;
+    margin-bottom: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15%;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.social a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------CIERRE DEL HEADER SECCIÓN------------------*/
+
+
+/*-----------------------MAIN SECCIÓN-----------------------*/
+
+.menu-container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.menu-container h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #ffffffee;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+.header-content {
+    padding-bottom: 50px;
+}
+
+.slider-img {
+    width: fit-content;
+    margin-bottom: 3rem;
+}
+
+
+.slider-img img {
+    width: 490px;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-txt {
+    margin-left: 85px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-txt h2 {
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 5px 7px;
+    padding-top: 6px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0d0d0d52;
+}
+
+.slider-txt p {
+    padding: 0 3.5px;
+    margin: 1.5rem 0;
+    font-size: 14px;
+    color: #dfdfdf;
+}
+
+.slider-txt .lista-ingredientes-container {
+    height: 260px;
+}
+
+.lista-ingredientes .ingrediente {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider-txt .lista-ingredientes p {
+    margin: .7rem 0;
+    font-size: 14px;
+}
+
+.slider-txt .lista-ingredientes i {
+    margin-right: 12px;
+    font-size: 1.5rem;
+}
+
+.slider-txt .botones {
+    position: relative;
+    padding: 40px 0;
+}
+
+.botones a {
+    display: block;
+    width: 190px;
+    max-width: 50%;
+    padding: 12px 32px;
+    color: #FFFFFF;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.botones .boton {
+    bottom: 90%;
+}
+
+.slider-pantera .Pantera-rosa{
+    border: 2px solid var(--primary-color);
+    background-color: rgb(244, 104, 190);
+}
+
+.slider-pantera .lista-ingredientes i{
+    color: var(--primary-color);
+}
+
+.slider-pantera .lista-ingredientes p:hover{
+    color: rgb(244, 104, 190);
+}
+
+.btn-Pantera-rosa {
+    border: 2px solid var(--primary-color);
+}
+
+.btn-Pantera-rosa:hover {
+    background-color: rgb(244, 104, 190);
+}
+
+.slider-san-fransisco .San-francisco{
+    border: 2px solid rgb(239, 73, 22);
+    background-color: rgb(242, 136, 7);
+}
+
+.btn-San-francisco {
+    border: 2px solid rgb(239, 73, 22);
+}
+
+.btn-San-francisco:hover {
+    background-color: rgb(242, 136, 7);
+}
+
+.slider-san-fransisco .lista-ingredientes i{
+    color: rgb(239, 73, 22);
+}
+
+.slider-san-fransisco .lista-ingredientes p:hover{
+    color: rgb(242, 136, 7);
+}
+
+.slider-mojito .Mojito{
+    border: 2px solid rgb(71, 155, 41);
+    background-color: rgb(137, 244, 98);
+
+}
+
+.btn-Mojito {
+    border: 2px solid rgb(71, 155, 41);
+}
+
+.btn-Mojito:hover {
+    background-color: rgb(137, 244, 98);
+}
+
+.slider-mojito .lista-ingredientes i{
+    color: rgb(71, 155, 41);
+}
+
+.slider-mojito .lista-ingredientes p:hover{
+    color: rgb(137, 244, 98);
+}
+
+.slider-sxbeach .Sex-on-the-beach{
+    border: 2px solid rgb(228, 102, 23);
+    background-color: rgb(242, 159, 34);
+}
+
+.btn-Sex-on-the-beach {
+    border: 2px solid rgb(228, 102, 23);
+}
+
+.btn-Sex-on-the-beach:hover {
+    background-color: rgb(242, 159, 34);
+}
+
+.slider-sxbeach .lista-ingredientes i{
+    color: rgb(228, 102, 23);
+}
+
+.slider-sxbeach .lista-ingredientes p:hover{
+    color: rgb(242, 159, 34);
+}
+
+.slider-blue-lagoon .Blue-lagoon{
+    border: 2px solid rgb(0, 153, 255);
+    background-color: rgb(0, 225, 255);
+}
+.btn-Blue-lagoon {
+    border: 2px solid rgb(0, 153, 255);
+}
+
+.btn-Blue-lagoon:hover {
+    background-color: rgb(0, 225, 255);
+}
+
+.slider-blue-lagoon .lista-ingredientes i{
+    color: rgb(0, 153, 255);
+}
+
+.slider-blue-lagoon .lista-ingredientes p:hover{
+    color: rgb(0, 225, 255);
+}
+
+.slider-misil-azul .misil-azul{
+    border: 2px solid rgb(0, 29, 247);
+    background-color: rgb(7, 113, 219);
+}
+
+.btn-misil-azul {
+    border: 2px solid rgb(0, 29, 247);
+}
+
+.btn-misil-azul:hover {
+    background-color: rgb(7, 113, 219);
+}
+
+.slider-misil-azul .lista-ingredientes i{
+    color: rgb(0, 153, 255);
+}
+
+.slider-misil-azul .lista-ingredientes p:hover{
+    color: rgb(7, 113, 219);
+}
+
+.slider-piña-colada .piña-colada{
+    border: 2px solid rgb(176, 178, 48);
+    background-color: rgb(238, 241, 87);
+}
+
+.btn-piña-colada {
+    border: 2px solid rgb(176, 178, 48);
+}
+
+.btn-piña-colada:hover {
+    background-color: rgb(238, 241, 87);
+}
+
+.slider-piña-colada .lista-ingredientes i {
+    color: rgb(176, 178, 48);
+}
+
+.slider-piña-colada .lista-ingredientes p:hover {
+    color: rgb(238, 241, 87);
+}
+
+.slider-esperma-pitufo .esperma-pitufo{
+    border: 2px solid rgb(1, 165, 186);
+    background-color: rgb(47, 223, 214);
+}
+
+.btn-esperma-pitufo {
+    border: 2px solid rgb(1, 165, 186);
+    color: #FFFFFF;
+}
+
+.btn-esperma-pitufo:hover {
+    background-color: rgb(47, 223, 214);
+}
+
+.slider-esperma-pitufo .lista-ingredientes i{
+    color: rgb(1, 165, 186);
+}
+
+.slider-esperma-pitufo .lista-ingredientes p:hover{
+    color: rgb(47, 223, 214);
+}
+
+.slider-daiquiri-fr .daiquiri-frutilla{
+    border: 2px solid rgb(74, 1, 17);
+    background-color: rgb(179, 19, 86);
+}
+
+.btn-daiquiri-frutilla {
+    border: 2px solid rgb(74, 1, 17);
+}
+
+.btn-daiquiri-frutilla:hover {
+    background-color: rgb(179, 19, 86);
+}
+
+.slider-daiquiri-fr .lista-ingredientes i{
+    color: rgb(74, 1, 17);
+}
+
+.slider-daiquiri-fr .lista-ingredientes p:hover{
+    color: rgb(179, 19, 86);
+}
+
+.slider-daiquiri-dz .daiquiri-durazno{
+    border: 2px solid rgb(174, 136, 14);
+    background-color: rgb(235, 183, 15);
+}
+
+.btn-daiquiri-durazno {
+    border: 2px solid rgb(174, 136, 14);
+}
+
+.btn-daiquiri-durazno:hover {
+    background-color: rgb(235, 183, 15);
+}
+
+.slider-daiquiri-dz .lista-ingredientes i{
+    color: rgb(174, 136, 14);
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.slider-daiquiri-dz .lista-ingredientes p:hover{
+    color: rgb(235, 183, 15);
+}
+
+.slider-daiquiri-pñ .daiquiri-piña{
+    border: 2px solid rgb(188, 152, 31);
+    background-color: rgb(251, 220, 119);
+}
+
+.btn-daiquiri-piña {
+    border: 2px solid rgb(188, 152, 31);
+}
+
+.btn-daiquiri-piña:hover {
+    background-color: rgb(251, 220, 119);
+}
+
+.slider-daiquiri-pñ .lista-ingredientes i{
+    color: rgb(188, 152, 31);
+}
+
+.slider-daiquiri-pñ .lista-ingredientes p:hover{
+    color: rgb(251, 220, 119);
+}
+
+.slider-coca .coca{
+    border: 2px solid rgb(65, 47, 21);
+    background-color: rgb(101, 82, 45);
+}
+
+.btn-coca {
+    border: 2px solid rgb(65, 47, 21);
+}
+
+.btn-coca:hover {
+    background-color: rgb(101, 82, 45);
+}
+
+.slider-coca .lista-ingredientes i{
+    color: rgb(65, 47, 21);
+}
+
+.slider-coca .lista-ingredientes p:hover{
+    color: rgb(101, 82, 45);
+}
+
+.slider-gancia-sprite .gancia-sprite{
+    border: 2px solid rgb(168, 187, 27);
+    background-color: rgb(218, 235, 90);
+}
+
+.btn-gancia-sprite {
+    border: 2px solid rgb(168, 187, 27);
+}
+
+.btn-gancia-sprite:hover {
+    background-color: rgb(218, 235, 90);
+}
+
+.slider-gancia-sprite .lista-ingredientes i{
+    color: rgb(168, 187, 27);
+}
+
+.slider-gancia-sprite .lista-ingredientes p:hover{
+    color: rgb(218, 235, 90);
+}
+
+
+.slider-vodka .vodka {
+    border: 2px solid rgb(226, 137, 4);
+    background-color: rgb(255, 182, 47);
+}
+
+.btn-vodka {
+    border: 2px solid rgb(226, 137, 4);
+    color: #FFFFFF;
+}
+
+.btn-vodka:hover {
+    background-color: rgb(255, 182, 47);
+}
+
+.slider-vodka .lista-ingredientes i{
+    color: rgb(226, 137, 4);
+}
+
+.slider-vodka .lista-ingredientes p:hover{
+    color: rgb(255, 182, 47);
+}
+
+
+.top-products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-options{
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.container-options .active {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    position: relative;
+    padding: 5rem 3.5rem;
+    background-color: var(--background-color);
+}
+
+.card-products {
+    position: relative;
+    background-color: var(--gris);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2px rgba(0,0,0,.1);
+}
+
+.container-products .card-sunrise {
+    border: 3px solid #ee1515;
+}
+
+.container-products .card-tropical {
+    border: 3px solid #ee6f00;
+}
+
+.container-products .card-paradise {
+    border: 3px solid rgb(239, 115, 175);
+}
+
+.container-products .card-piñarosa {
+    border: 3px solid rgb(255, 217, 102);
+}
+
+.container-img{
+    position: relative;
+    height: 245px;
+    max-height: 60%;
+}
+
+.container-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding-top: .55rem;
+}
+
+.container-img .img-sunrise, .container-img .img-tropical {
+    padding-top: 32px;
+}
+
+.container-img .img-piñarosa {
+    padding-top: 19px;
+}
+
+.container-img .img-paradise, 
+.container-img .img-tropical,
+.container-img .img-piñarosa {
+    margin-left: 3px;
+}
+
+
+.card-products .fondo-transparente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient( 
+    transparent 0%,
+    #0d0d0dae 20%,
+    #0d0d0ddd 40%,
+    #0d0d0ddd 60%,
+    #0d0d0dae 80%,
+    transparent 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s normal, opacity 0.5s normal, z-index 0.5s normal;
+}
+
+.button-group:has(.boton-descrip:hover):hover + .fondo-transparente {
+    top: 50%;
+    opacity: 1;
+    z-index: 10;
+}
+
+.button-group:has(.boton-ingredientes:hover):hover ~ .fondo-2 {
+    top: 50%;
+    opacity: 1;
+    z-index: 10;
+}
+
+.fondo-transparente p, .fondo-2 p {
+    max-height: 95%;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    text-wrap: pretty;
+    font-size: 12px;
+}
+
+.fondo-2 p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.fondo-2 .lista-sin-alcohol {
+    width: fit-content;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 6px;
+}
+
+.fondo-2 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-2 li i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.card-sunrise .fondo-2 i {
+    color: #ee1515;
+}
+
+.card-tropical .fondo-2 i {
+    color: #ee6f00;
+}
+
+.card-paradise .fondo-2 i {
+    color: rgb(239, 115, 175);
+}
+
+.card-piñarosa {
+    color: rgb(255, 217, 102);
+}
+
+.discount {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.discount-sunrise{
+    background-color: #ee1515;
+}
+
+.discount-amanecer{
+
+    background-color: #ee6f00;
+}
+
+.discount-paradise{
+    background-color: rgb(239, 115, 175);
+}
+
+.discount-piñarosa{
+    background-color: rgb(255, 217, 102);
+}
+
+.content-card-product{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 1rem;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.content-card-product .stars{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin-top: 13px;
+    font-size: 1.3rem;
+}
+
+.stars-amanecer i{
+    color: #ee6f00;
+}
+.stars-sunrise i{
+    color: #ee1515;
+}
+.stars-paradise i{
+    color: rgb(239, 115, 175);
+}
+.stars-piñarosa i{
+    color: rgb(255, 217, 102);
+}
+
+.nombre-container {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.nombre-container h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.nombre-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.add-cart {
+    justify-self: start;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    transition: background-color .4s normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-cart a {
+    flex-grow: 1;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.add-cart i {
+    font-size: 1.5rem;
+}
+
+.cart-sunrise {
+    border: 2px solid #ee1515;
+}
+
+.cart-sunrise i{
+    color: #ee1515;
+}
+
+.cart-sunrise:hover{
+    background-color: #ee1515;
+}
+
+.cart-sunrise:hover i{
+    color: #fff;
+}
+
+.cart-amanecer {
+    border: 2px solid #ee6f00;
+}
+
+.cart-amanecer:hover{
+    background-color: #ee6f00;
+}
+
+.cart-amanecer i{
+    color: #ee6f00;
+}
+
+.cart-amanecer:hover i{
+    color: #fff;
+}
+
+.cart-paradise{
+    border: 2px solid rgb(239, 115, 175);
+}
+
+.cart-paradise:hover{
+    background-color: rgb(239, 115, 175);
+}
+
+.cart-paradise i{
+    color: rgb(239, 115, 175);
+}
+
+.cart-paradise:hover i{
+    color: #fff;
+}
+
+.cart-piñarosa{
+    border: 2px solid rgb(255, 217, 102);
+}
+
+.cart-piñarosa:hover{
+    background-color: rgb(255, 217, 102);
+}
+
+.cart-piñarosa i{
+    color: rgb(255, 217, 102);
+}
+
+.cart-piñarosa:hover i{
+    color: #fff;
+}
+
+.content-card-product .price{
+    justify-self: end;
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.price-sunrise{
+    color: #ee1515;
+}
+
+.content-card-product .price-amanecer{
+    color: #ee6f00;
+}
+
+.content-card-product .price-paradise{
+    color: rgb(239, 115, 175);
+}
+
+.content-card-product .price-piñarosa{
+    color: rgb(255, 217, 102);
+}
+
+.content-card-product .Amanecer:hover{
+    color: #ee6f00;
+}
+.content-card-product .Sunrise:hover{
+    color: #ee1515;
+}
+.content-card-product .paradise:hover{
+    color: rgb(239, 115, 175);
+}
+.content-card-product .piñarosa:hover{
+    color: rgb(255, 217, 102);
+}
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+    z-index: -1;
+    transition: top .4s normal, z-index .4s normal;
+}
+
+.card-products:hover .button-group {
+    z-index: 20;
+    top: 3%;
+}
+
+.button-group span{
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.4s normal;
+}
+
+.button-group .item-container {
+    width: 100%;
+    text-align: center;
+}
+
+.button-group span i{
+    font-size: 1.5rem;
+    margin-top: 3px;
+}
+
+.button-group span:hover i{
+    color: #fff;
+}
+
+
+.button-group-sunrise span {
+    border: 2px solid #ee1515;
+}
+
+.button-group-sunrise span:hover {
+    background-color: #ee1515;
+}
+
+.button-group-sunrise span i {
+    color: #ee1515;
+}
+
+.button-group-amanecer span {
+    border: 2px solid #ee6f00;
+}
+
+.button-group-amanecer span:hover {
+    background-color: #ee6f00;
+}
+
+.button-group-amanecer span i {
+    color: #ee6f00;
+}
+
+.button-group-paradise span {
+    border: 2px solid rgb(239, 115, 175);
+}
+
+.button-group-paradise span:hover {
+    background-color: rgb(239, 115, 175);
+}
+.button-group-paradise span i {
+    color: rgb(239, 115, 175);
+}
+
+.button-group-piñarosa span {
+    border: 2px solid rgb(255, 217, 102);
+}
+
+.button-group-piñarosa span:hover {
+    background-color: rgb(255, 217, 102);
+}
+
+.button-group-piñarosa span i {
+    color: rgb(255, 217, 102);
+}
+
+
+
+
+/*------------------CIERRE DE MAIN SECCIÓN------------------*/
+
+/*----------------------FOOTER SECCIÓN----------------------*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.info {
+    margin: 150px auto;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding: 0;
+}
+
+.info-redes {
+    position: relative;
+    z-index: 20;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.info-container > * {
+    flex-grow: 1;
+}
+
+.info-img {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    z-index: -1;
+    margin: auto;
+}
+
+.info-img img {
+    display: none;
+    margin: auto;
+    width: 90px;
+}
+
+.info-txt {
+    width: 75%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.info-txt p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    text-wrap: pretty;
+}
+
+.Horario {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: space-between;
+    padding: 22px;
+    gap: 40px;
+}
+
+.Horario p {
+    font-size: 20px;
+    text-wrap: pretty;
+    text-align: center;
+}
+
+
+.Horario .direccion-info {
+    flex-grow: 2;
+}
+
+.btn-masinfo-container {
+    margin: 14px auto;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 50px;
+    filter: drop-shadow(0 0 8px #c107ac) drop-shadow(0 0 6px #c107ac); 
+}
+
+.btn-masinfo-container a {
+    border: 3px solid #fdcafc;
+    border-radius: 50px;
+    padding: 15px 35px;
+    color: #FFFFFF;
+}
+
+.btn-masinfo-container a:hover {
+    background-color: var(--primary-color);
+}
+
+.footer .links-contacto {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links-contacto .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.links-contacto .link {
+    height: 110px;
+}
+
+.links-contacto div {
+    width: 120px;
+}
+
+.links-contacto ul {
+    width: 85%;
+}
+
+.links-contacto li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links-contacto li:hover a,
+.links-contacto li:hover i {
+    color: var(--primary-color);
+}
+
+.links-contacto a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.links-contacto i {
+    font-size: 22px;
+    color: #fff;
+}
+
+.footer-logo-container {
+    width: 15%;
+}
+
+.footer-redes-sociales {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-redes-sociales .redes-sociales {
+    width: 80%;
+}
+
+.footer-redes-sociales h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/*----------------CIERRE DE FOOTER SECCIÓN-----------------*/
+
+
+/*---BORDES DE NEON---*/
+.navbar-container::before,
+.menu-container h1::before,
+.container-options::before,
+.container-products::before,
+.info::before,
+.info-container::before,
+.info-txt::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    filter: blur(0);
+    border: 3px solid var(--primary-color);
+    border-left: none;
+    border-right: none;
+    filter: drop-shadow(0 0 15px var(--primary-color)) drop-shadow(0 0 4px #c107ac);
+}
+
+.navbar-container::before {
+    z-index: -1;
+}
+
+.container-products::before {
+    border-top: none;
+}
+
+
+.info-container::before {
+    border-top: none;
+}
+
+.info-txt::before {
+    border: none;
+    border-right: 3px solid var(--primary-color);
+}
+
+
+/*---BORDES DE NEON---*/
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color:  var(--primary-color);
+}
+
+.swiper-pagination-bullet {
+    background-color: #D3D2D2;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+}
+
+
+
+.logo-1 {
+    width:0;
+    border-radius: 50%;
+}
+
+
+.social:hover {
+    background-color: var(--primary-color);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+
+/*------------------------MEDIA----------------------------*/
+
+/*-----------------------HEADER SECCIÓN-----------------------*/
+
+
+@media(max-width: 991px) {
+
+    .navbar-container {
+        padding: 10px 0;
+    }
+
+    .navbar {
+        position: relative;
+        width: 98%;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .navbar .redes-sociales {
+        display: none;
+    }
+
+    .navbar .logo-2 {
+        margin: 0;
+        padding-top: 3px;
+        width: 50px;
+    }
+
+    .checkbox-container {
+        display: block;
+    }
+
+    .checkbox-container label {
+        display: block;
+    }
+
+    .menu-1 {
+        width: 75%;
+        height: 100%;
+        position: absolute;
+        top : 120%;
+        left: 0px;
+        display: none;
+    }
+
+    .menu-1 ul {
+        background-color: var(--background-color);
+        border-radius: 12px;
+        width: 100%;
+        height: fit-content;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .menu-1 a {
+        text-transform: none;
+    }
+
+/*-----------------------CIERRE HEADER SECCIÓN-----------------------*/
+
+/*-----------------------MAIN SECCIÓN-----------------------*/
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .menu-container {
+        margin-top: 40px;
+    }
+
+    .menu-container h1 {
+        font-size: 3.6rem;
+    }
+
+    .slider-img {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .slider-img img {
+        width: 220px;
+    }
+
+    .slider {
+        flex-direction: column;
+        width: 97%;
+        margin: auto;
+    }
+
+    .slider-txt {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-txt h1 {
+        font-size: 40px;
+    }
+
+    .slider-txt p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+.slider-txt .descripcion-container p {
+    height: 100px;
+    width: 95%;
+    margin: 15px auto;
+}
+
+    .slider-txt .lista-ingredientes-container {
+        height: 125px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .lista-ingredientes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .slider-txt .lista-ingredientes i {
+        margin-right: .3rem;
+    }
+
+    .lista-ingredientes .ingrediente {
+        height: fit-content;
+    }
+
+    .botones {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .botones a {
+        display: inline-block;
+        position: static;
+        padding: 10px 0;
+        width: 45%;
+        max-width: 190px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .container-options {
+        margin-top: 40px;
+    }
+
+    .container-options .active {
+        font-size: 3.6rem;
+    }
+
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .button-group .boton-descrip, .button-group .boton-ingredientes {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .add-cart {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .fondo-2 .lista-sin-alcohol {
+        margin-left: .8rem;
+    }
+
+    .fondo-2 .lista-sin-alcohol i, .lista-sin-alcohol p {
+        font-size: 1.5rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-txt {
+        width: 100%;
+    }
+
+    .info-txt::before {
+        border: none;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    .info-redes {
+        position: relative;
+        z-index: 20;
+    }
+
+    .info-redes .footer-logo-container {
+        display: none;
+    }
+
+    .links-contacto .link-3 {
+        display: none;
+    }
+
+    .footer-redes-sociales {
+        width: 42%;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -4px;
+    }
+
+}
