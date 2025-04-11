@@ -1501,6 +1501,10 @@ header, main, footer {
         width: 40px;
         height: 40px;
     }
+    .redes-sociales{
+        width: 100%;
+        gap: 3px;
+    }
 
     .info-redes .footer-logo-container {
         display: none;
@@ -1513,6 +1517,7 @@ header, main, footer {
     .footer-redes-sociales {
         width: 42%;
     }
+    
 
     .swiper-horizontal > .swiper-pagination-bullets,
     .swiper-pagination-bullets,.swiper-pagination-horizontal,
