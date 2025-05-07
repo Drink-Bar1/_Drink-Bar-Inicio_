@@ -97,6 +97,11 @@ header, main, footer {
     display: block;
     font-weight: 600;
     text-transform: uppercase;
+    margin-left: 5px;
+}
+.menu-1 a:hover{
+    background-color: var(--primary-color);
+    border-radius: 30px;
 }
 
 .logo-2 {
