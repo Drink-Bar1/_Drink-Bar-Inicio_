@@ -353,27 +353,26 @@ header, main, footer {
     color: rgb(0, 225, 255);
 }
 
-.slider-misil-azul .misil-azul{
-    border: 2px solid rgb(0, 29, 247);
-    background-color: rgb(7, 113, 219);
+.slider-dulce-tentacion .dulce-tentacion{
+    border: 2px solid rgba(106, 75, 6, 0.761);
+    background-color: rgba(249, 194, 75, 0.827);
 }
 
-.btn-misil-azul {
-    border: 2px solid rgb(0, 29, 247);
+.btn-dulce-tentacion {
+    border: 2px solid rgba(149, 106, 12, 0.761);
 }
 
-.btn-misil-azul:hover {
-    background-color: rgb(7, 113, 219);
+.btn-dulce-tentacion:hover {
+    background-color: rgba(249, 194, 75, 0.827);
 }
 
-.slider-misil-azul .lista-ingredientes i{
-    color: rgb(0, 153, 255);
+.slider-dulce-tentacion .lista-ingredientes i{
+    color: rgba(249, 194, 75, 0.827);
 }
 
-.slider-misil-azul .lista-ingredientes p:hover{
-    color: rgb(7, 113, 219);
+.slider-dulce-tentacion .lista-ingredientes p:hover{
+    color: rgba(166, 116, 10, 0.761);
 }
-
 .slider-piña-colada .piña-colada{
     border: 2px solid rgb(176, 178, 48);
     background-color: rgb(238, 241, 87);
